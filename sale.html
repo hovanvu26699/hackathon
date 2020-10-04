@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sale</title>
+    <title>Sale | 71-BếnTre</title>
     <!-- **************FireBase********************* -->
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <!-- navbar start -->
     <div class="navbar-area">
         <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
@@ -47,6 +48,7 @@
         </nav>
     </div>
     <!-- navbar end -->
+
     <!-- đăng bài -->
     <div class="subscribe-area text-center">
         <div class="container">
@@ -63,7 +65,7 @@
                 </div>
                 <div class="col-lg-6 col-md-8">
                     <div class="subscribe-form">
-                        <input id="gia" type="text" placeholder="Giá">
+                        <input id="gia" type="text" placeholder="Giá (đơn vị $)">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-8">
@@ -72,9 +74,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-8">
-                    <div class="subscribe-form">
-                        <input id="loai" type="text" placeholder="Loại">
-                    </div>
+                    <div class="subscribe-form topbar-cat-select">
+                        <select class="form-control" id="loai" name="sellist1">
+                            <option>comic</option>
+                            <option>economy</option>
+                            <option>history</option>
+                            <option>other</option>
+                        </select>
+                     </div>
                 </div>
                 <div class="col-lg-6 col-md-8">
                     <input id="img" type="file" placeholder="hình">
@@ -116,9 +123,11 @@
     <!-- footer area end -->
     <input type="button" id="test" value="test">
     <span id="123">
-
     </span>
+    <script src="assets/js/vendor.js"></script>
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

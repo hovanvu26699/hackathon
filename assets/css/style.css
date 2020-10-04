@@ -64,6 +64,7 @@ body {
   color: var(--main-color-one);
   overflow-x: hidden;
   font-family: var(--body-font);
+  background-color: #e1cfcf5e;
 }
 
 h1 {
